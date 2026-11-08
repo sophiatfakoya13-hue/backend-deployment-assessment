@@ -1,0 +1,13 @@
+services:
+  backend:
+    image: muchtodo-backend:latest
+    container_name: muchtodo-backend
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      MONGO_URI: ${MONGO_URI}
+      DB_NAME: muchtodo
+      ENABLE_CACHE: "false"
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+    restart: unless-stopped

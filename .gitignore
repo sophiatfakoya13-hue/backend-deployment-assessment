@@ -1,0 +1,12 @@
+.env
+*.env
+.git
+*.pem
+mongodb.key
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+tfplan
+.DS_Store
+*.tar
